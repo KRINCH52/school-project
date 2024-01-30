@@ -1,0 +1,311 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+.head {
+  height: 70px;
+  background-color: dimgrey;
+  text-align: center;
+}
+
+.head__school {
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: rgba(219, 219, 219, 0.9254901961);
+}
+
+.main {
+  text-align: center;
+  min-width: 100%;
+  min-height: 500px;
+  background-color: lavenderblush;
+  padding: 50px 0;
+}
+
+.main__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__name {
+  margin: 0 10px 0 0;
+}
+
+.name__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.name__subtitle {
+  font-family: Merriweather;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+.name__title {
+  font-size: 45px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.23);
+  margin: 0 0 50px 0;
+}
+
+h1::before {
+  content: "«";
+}
+
+h1::after {
+  content: "»";
+}
+
+.name__student {
+  font-family: Merriweather;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.name__teacher {
+  font-family: Merriweather;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.main__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 400px;
+          flex: 0 0 400px;
+  margin: 0 0 0 10px;
+  border: dimgrey 8px solid;
+  border-radius: 3%;
+}
+.main__image img {
+  opacity: 0.9;
+}
+
+.opisanie__title {
+  text-align: center;
+}
+
+.glava {
+  font-size: 45px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.23);
+  margin: 50px 0 50px 0;
+}
+
+.opisanie__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.opisanie__celi {
+  margin: 0 250px 0 0;
+}
+
+.glava__celi {
+  font-size: 30px;
+  line-height: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.23);
+  margin: 50px 0 50px 0;
+}
+
+.celi__block {
+  max-width: 300px;
+}
+
+.celi__text {
+  font-family: Merriweather;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.opisanie__zadachi {
+  margin: 0 0 0 250px;
+}
+
+.glava__zadachi {
+  font-size: 30px;
+  line-height: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.23);
+  margin: 50px 0 50px 0;
+}
+
+.zadachi__list {
+  list-style-type: circle;
+  max-width: 300px;
+}
+
+.zadachi__item {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  font-family: Merriweather;
+}
+
+.opisanie__metaf {
+  margin: 35px 0 40px 0;
+}
+.opisanie__metaf h3 {
+  font-size: 30px;
+  line-height: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.23);
+  margin: 20px 10px 0;
+}
+.opisanie__metaf p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  font-family: Merriweather;
+}
+
+.opisanie__button {
+  margin: 0 0 50px 0;
+}
+.opisanie__button button {
+  padding: 15px 30px;
+  background-color: lavenderblush;
+  border: 3px solid dimgray;
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  font-family: Merriweather;
+}
+
+footer {
+  min-height: 70px;
+  background-color: dimgrey;
+  text-align: center;
+}
